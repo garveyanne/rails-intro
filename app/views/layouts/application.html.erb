@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsIntro</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Ode To My Mother</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="uikit.min.css" />
   </head>
-
   <body>
+    <!-- The content of your web page goes here -->
+    <%= render partial: 'shared/navbar' %>
     <%= yield %>
+    <!-- UIkit JavaScript -->
+    <script src="dist/bundle.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
   </body>
 </html>
